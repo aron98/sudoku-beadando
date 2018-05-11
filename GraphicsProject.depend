@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1526074815 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+1526077882 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
-	"Sudoku.hpp"
+	"DigitBox.hpp"
 	<vector>
 
 1526058152 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\include\graphics.hpp
@@ -23,12 +23,12 @@
 
 1526054932 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.hpp
 
-1526075523 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
+1526078008 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
 	"graphics.hpp"
 	"global.hpp"
 	"GUI.hpp"
 
-1526075336 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
+1526078244 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
 	"graphics.hpp"
 	"Widget.hpp"
 	"GUI.hpp"
@@ -58,12 +58,12 @@
 	<vector>
 	<functional>
 
-1526070763 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.hpp
+1526077333 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.hpp
+	"graphics.hpp"
 	"Widget.hpp"
-	<functional>
 
-1526073676 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.cpp
-	"Digitbox.hpp"
+1526077932 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.cpp
+	"DigitBox.hpp"
 
 1526074466 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokuboard.hpp
 	"Digitbox.hpp"

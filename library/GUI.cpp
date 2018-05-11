@@ -1,7 +1,7 @@
 #include "graphics.hpp"
 #include "GUI.hpp"
 #include "Widget.hpp"
-#include "Sudoku.hpp"
+#include "DigitBox.hpp"
 
 #include <vector>
 
@@ -12,8 +12,11 @@ GUI::GUI(int _width, int _height) : width(_width),height(_height){
     gout.open(width, height);
     outputCanvas=canvas(width,height);
     Coord coord(10,10);
-    Sudoku* sudoku = new Sudoku(this, coord);
-    widgets.push_back(sudoku);
+    int h = outputCanvas.cascent() + outputCanvas.cdescent() + 7;
+    DigitBox* number = new DigitBox(this, coord, h-1, h-1,9);
+    widgets.push_back(number);
+    DigitBox* number2 = new DigitBox(this, Coord(50,50), h-1, h-1);
+    widgets.push_back(number2);
 }
 
 void GUI::eventLoop(){

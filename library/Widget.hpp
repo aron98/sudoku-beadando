@@ -11,18 +11,16 @@ class Widget{
 protected:
     Coord position;
     int width, height;
-    bool focus,focusable;
+    bool focus,focusable,mouseOver;
     genv::color backgroundColor=genv::color(0,0,0);
     genv::color borderColor=genv::color(0,0,0);
     genv::color selectedColor=genv::color(127,176,255);
     GUI* gui;
 public:
     Widget(GUI* parent, Coord coords, int _width, int _height);
-    void setFocus();
-    void unsetFocus();
-    bool isFocusable();
-    virtual void eventHandler(const genv::event& ev);
-    virtual void draw(genv::canvas& out);
+    bool isOver(int _x, int _y);
+    virtual void eventHandler(const genv::event& ev)=0;
+    virtual void draw(genv::canvas& out)=0;
 };
 
 #endif // WIDGET_HPP_INCLUDED
