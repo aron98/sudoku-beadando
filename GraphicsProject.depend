@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1526062896 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+	"graphics.hpp"
+	"GUI.hpp"
+	"Widget.hpp"
+
+1526058152 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\include\graphics.hpp
+	<string>
+
+1526063125 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.hpp
+	"graphics.hpp"
+	"Widget.hpp"
+	<vector>
+
+1526059926 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
+	"graphics.hpp"
+	"library/GUI.hpp"
+
+1526054949 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.cpp
+	"global.hpp"
+
+1526054932 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.hpp
+
+1526062919 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
+	"graphics.hpp"
+	"global.hpp"
+	"GUI.hpp"
+
+1526062975 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
+	"graphics.hpp"
+	"Widget.hpp"
+
