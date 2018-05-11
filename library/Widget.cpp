@@ -8,6 +8,8 @@ using namespace std;
 Widget::Widget(GUI* parent, Coord coords, int _width, int _height) : gui(parent), position(coords), width(_width), height(_height){
     backgroundColor=gui->getBackgroundColor();
     borderColor=gui->getBorderColor();
+    focus=false;
+    mouseOver=false;
 }
 
 bool Widget::isOver(int posx, int posy){

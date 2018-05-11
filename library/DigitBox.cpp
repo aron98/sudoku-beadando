@@ -6,7 +6,6 @@ using namespace std;
 DigitBox::DigitBox(GUI* parent, Coord coords, int _width, int _height, int _digit) : Widget(parent, coords, _width, _height){
     valid=true;
     focusable=(_digit==0);
-    focus=false;
     digit=_digit;
 }
 
@@ -15,12 +14,7 @@ void DigitBox::eventHandler(const event& ev){
 
     if(ev.type == ev_key)
     {
-        /*if('0' <= ev.keycode && ev.keycode <= '9')
-        {
-            if(myDigit!=ev.keycode-'0' && action) action();
-            myDigit = ev.keycode - '0';
-        }*/
-
+        if('0' <= ev.keycode && ev.keycode <= '9' && focus) digit = ev.keycode - '0';
     }
     if(ev.type==ev_mouse){
         if(isOver(ev.pos_x,ev.pos_y))mouseOver=true;
@@ -38,9 +32,9 @@ void DigitBox::eventHandler(const event& ev){
 
 void DigitBox::draw(canvas& out){
     out << move_to(position.x, position.y);
-    if(mouseOver) out << color(selectedColor.red-30,selectedColor.green-30, selectedColor.blue-30);
     if(focus) out << selectedColor;
     else if(!focusable && !valid) out << color(255,backgroundColor.green,backgroundColor.blue);
+    else if(mouseOver) out << color(selectedColor.red+30,selectedColor.green+30, selectedColor.blue);
     else out << borderColor;
     out << box(width, height);
 
@@ -65,4 +59,12 @@ void DigitBox::draw(canvas& out){
         out << color(0,0,0);
         out << text(t);
     }
+}
+
+int DigitBox::getValue(){
+    return digit;
+}
+
+bool DigitBox::isEmpty(){
+    return (digit==0);
 }
