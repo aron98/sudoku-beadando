@@ -11,14 +11,16 @@ class Widget;
 class GUI{
     int width, height;
     genv::canvas outputCanvas;
-    genv::color backgroundColor=genv::color(0,0,0);
-    genv::color borderColor=genv::color(0,0,0);
+    genv::color backgroundColor=genv::color(239,239,239);
+    genv::color borderColor=genv::color(200,200,200);
     std::vector<Widget*> widgets;
     void draw();
 public:
-    GUI(int _r=239, int _g=239, int _b=239, int _width=400, int _height=400);
+    GUI(int _width=400, int _height=400);
     void eventLoop();
     genv::color getBackgroundColor();
+    genv::color getBorderColor();
+    ~GUI();
 };
 
 #endif // GUI_HPP_INCLUDED

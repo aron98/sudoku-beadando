@@ -1,13 +1,15 @@
 # depslib dependency file v1.0
-1526062896 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+1526066246 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
+	"Sudoku.hpp"
+	<vector>
 
 1526058152 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\include\graphics.hpp
 	<string>
 
-1526063125 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.hpp
+1526065978 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.hpp
 	"graphics.hpp"
 	"Widget.hpp"
 	<vector>
@@ -21,12 +23,32 @@
 
 1526054932 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.hpp
 
-1526062919 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
+1526066795 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
 	"graphics.hpp"
 	"global.hpp"
 	"GUI.hpp"
 
-1526062975 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
+1526066444 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
 	"graphics.hpp"
 	"Widget.hpp"
+
+1526064294 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku\sudoku.cpp
+	"../Widget.hpp"
+	"Sudoku.hpp"
+
+1526064517 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku\sudoku.hpp
+	"../Widget.hpp"
+	<vector>
+
+1526065638 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.cpp
+	"graphics.hpp"
+	"GUI.hpp"
+	"Widget.hpp"
+	"Sudoku.hpp"
+
+1526066451 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.hpp
+	"graphics.hpp"
+	"GUI.hpp"
+	"Widget.hpp"
+	<vector>
 

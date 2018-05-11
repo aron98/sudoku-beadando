@@ -1,18 +1,19 @@
 #include "graphics.hpp"
 #include "GUI.hpp"
 #include "Widget.hpp"
+#include "Sudoku.hpp"
+
+#include <vector>
 
 using namespace genv;
 using namespace std;
 
-GUI::GUI(int _r, int _g, int _b, int _width, int _height) : width(_width),height(_height){
+GUI::GUI(int _width, int _height) : width(_width),height(_height){
     gout.open(width, height);
     outputCanvas=canvas(width,height);
-    backgroundColor=color(_r,_g,_b);
-    _r=(_r>=50 ? _r-50 : _r+50);
-    _g=(_g>=50 ? _g-50 : _g+50);
-    _b=(_b>=50 ? _b-50 : _b+50);
-    borderColor=color(_r,_g,_b);
+    Coord pos(10,10);
+    Sudoku* sudoku = new Sudoku(this,pos,100,100);
+    widgets.push_back(sudoku);
 }
 
 void GUI::eventLoop(){
@@ -27,5 +28,19 @@ void GUI::eventLoop(){
 void GUI::draw(){
     gout<<stamp(outputCanvas,0,0);
     gout<<refresh;
+}
+
+color GUI::getBackgroundColor(){
+    return backgroundColor;
+}
+
+color GUI::getBorderColor(){
+    return borderColor;
+}
+
+GUI::~GUI(){
+    for(std::vector<Widget*>::iterator it = widgets.begin(); it != widgets.end(); ++it) {
+        delete (*it);
+    }
 }
 
