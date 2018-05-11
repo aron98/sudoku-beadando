@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526066246 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+1526074815 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
@@ -23,14 +23,15 @@
 
 1526054932 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.hpp
 
-1526066795 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
+1526075523 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
 	"graphics.hpp"
 	"global.hpp"
 	"GUI.hpp"
 
-1526066444 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
+1526075336 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
 	"graphics.hpp"
 	"Widget.hpp"
+	"GUI.hpp"
 
 1526064294 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku\sudoku.cpp
 	"../Widget.hpp"
@@ -40,15 +41,40 @@
 	"../Widget.hpp"
 	<vector>
 
-1526065638 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.cpp
+1526075101 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
 	"Sudoku.hpp"
+	<vector>
+	<functional>
 
-1526066451 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.hpp
+1526074487 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku.hpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
+	"Digitbox.hpp"
+	"SudokuBoard.hpp"
 	<vector>
+	<functional>
+
+1526070763 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.hpp
+	"Widget.hpp"
+	<functional>
+
+1526073676 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.cpp
+	"Digitbox.hpp"
+
+1526074466 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokuboard.hpp
+	"Digitbox.hpp"
+	"Widget.hpp"
+	<vector>
+	<functional>
+
+1526074465 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokuboard.cpp
+	"graphics.hpp"
+	"SudokuBoard.hpp"
+	"Widget.hpp"
+	<vector>
+	<functional>
 

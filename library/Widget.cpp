@@ -1,5 +1,6 @@
 #include "graphics.hpp"
 #include "Widget.hpp"
+#include "GUI.hpp"
 
 using namespace genv;
 using namespace std;
@@ -19,8 +20,4 @@ void Widget::unsetFocus(){
 
 bool Widget::isFocusable(){
     return focusable;
-}
-
-void Widget::draw(genv::canvas& out){
-    out<<move_to(position.x,position.y);
 }

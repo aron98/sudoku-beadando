@@ -21,8 +21,8 @@ public:
     void setFocus();
     void unsetFocus();
     bool isFocusable();
-    void eventHandler(const genv::event ev);
-    void draw(genv::canvas& out);
+    virtual void eventHandler(const genv::event& ev);
+    virtual void draw(genv::canvas& out);
 };
 
 #endif // WIDGET_HPP_INCLUDED
