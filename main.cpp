@@ -1,13 +1,10 @@
 #include "graphics.hpp"
-using namespace genv;
-
+#include "library/GUI.hpp"
 
 int main()
 {
-    gout.open(400,400);
-    gout <<text("hello world")<< refresh;
-    event ev;
-    while(gin >> ev) {
-    }
+    GUI * g = new GUI();
+    g->eventLoop();
+    delete g;
     return 0;
 }
