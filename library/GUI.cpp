@@ -13,15 +13,7 @@ GUI::GUI(int _width, int _height) : width(_width),height(_height){
     gout.open(width, height);
     outputCanvas=canvas(width,height);
     int h = gout.cascent() + gout.cdescent() + 7;
-    vector<vector<int>> fields;
-    for(int i =0; i < 9; i++){
-        vector<int> r;
-        for(int j = 0; j<9; j++){
-            r.push_back(0);
-        }
-        fields.push_back(r);
-    }
-    SudokuBox* sudoku = new SudokuBox(this, Coord(10,10), fields,3+9*h+9/3*2,3+9*h+9/3*2);
+    SudokuBox* sudoku = new SudokuBox(this, Coord(10,10), "level.sudoku",3+9*h+9/3*2,3+9*h+9/3*2);
     widgets.push_back(sudoku);
 }
 

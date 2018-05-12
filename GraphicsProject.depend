@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526081741 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+1526159066 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
@@ -79,11 +79,15 @@
 	<vector>
 	<functional>
 
-1526116567 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526159089 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"DigitBox.hpp"
 	<vector>
 
-1526081655 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
+1526160989 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
 	"SudokuBox.hpp"
 	<vector>
+	<fstream>
+	<string>
+	<sstream>
+	<iostream>
 
