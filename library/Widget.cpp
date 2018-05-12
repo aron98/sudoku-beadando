@@ -19,3 +19,7 @@ bool Widget::isOver(int posx, int posy){
     }
     return false;
 }
+
+bool Widget::isFocusable(){
+    return focusable;
+}

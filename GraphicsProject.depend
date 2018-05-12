@@ -24,12 +24,12 @@
 
 1526054932 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.hpp
 
-1526078008 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
+1526116548 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.hpp
 	"graphics.hpp"
 	"global.hpp"
 	"GUI.hpp"
 
-1526079100 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
+1526116561 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
 	"graphics.hpp"
 	"Widget.hpp"
 	"GUI.hpp"
@@ -79,7 +79,7 @@
 	<vector>
 	<functional>
 
-1526082431 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526116567 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"DigitBox.hpp"
 	<vector>
 

@@ -19,6 +19,7 @@ protected:
 public:
     Widget(GUI* parent, Coord coords, int _width, int _height);
     bool isOver(int _x, int _y);
+    bool isFocusable();
     virtual void eventHandler(const genv::event& ev)=0;
     virtual void draw(genv::canvas& out)=0;
 };

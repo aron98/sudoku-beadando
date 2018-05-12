@@ -23,6 +23,7 @@ void SudokuBox::eventHandler(const event& ev){
             fields[i][j]->eventHandler(ev);
         }
     }
+    validate();
 }
 
 void SudokuBox::draw(canvas& out){
@@ -35,10 +36,30 @@ void SudokuBox::draw(canvas& out){
 }
 
 bool SudokuBox::validate(){
-
+    for(int x = 0; x<3; x++){
+        for(int y = 0; y<3; y++){
+            vector<DigitBox*> box;
+            for(int i = 0+x*3; i < 3+x*3; i++){
+                for(int j = 0+y*3; j < 3+y*3; j++){
+                    for(int a=0; a<box.size(); a++){
+                        if(box[a]->getValue()==fields[i][j]->getValue()){
+                            if(box[a]->getValue()!=0){
+                                if(fields[i][j]->isFocusable()) fields[i][j]->valid=false;
+                                else box[a]->valid=false;
+                            }
+                            box[a]->valid=true;
+                        }/*else{
+                            box[a]->valid=true;
+                        }*/
+                    }
+                    box.push_back(fields[i][j]);
+                }
+            }
+        }
+    }
     bool validated=true;
     for(int i = 0; i < fields.size(); i++){
-        for(int j = 0; i < fields[i].size(); j++){
+        for(int j = 0; j < fields[i].size(); j++){
             if(fields[i][j]->isEmpty() || !((*fields[i][j]).valid)){
                 validated=false;
             }
