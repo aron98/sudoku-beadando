@@ -16,16 +16,25 @@ SudokuBox::SudokuBox(GUI* parent, Coord coords, string filename,std::function<vo
 void SudokuBox::loadMap(string filename){
     int h = gout.cascent() + gout.cdescent() + 7;
     ifstream input(filename.c_str());
+    vector<vector<int>> loadMatrix;
     for(int i = 0; i < 9; i++){
         stringstream ss;
         string str;
         getline(input,str);
         ss<<str;
-        vector<DigitBox*> r;
+        vector<int> r;
         for(int j = 0; j < 9; j++){
             int temp;
             ss>>temp;
-             DigitBox* d = new DigitBox(gui,Coord(position.x+3+i*h+i/3*2, position.y+3+j*h + j/3*2), h-1,h-1,temp);
+            r.push_back(temp);
+        }
+        loadMatrix.push_back(r);
+    }
+    fields.clear();
+    for(int j = 0; j < 9; j++){
+        vector<DigitBox*> r;
+        for(int i = 0; i < 9; i++){
+             DigitBox* d = new DigitBox(gui,Coord(position.x+3+i*h+i/3*2, position.y+3+j*h + j/3*2), h-1,h-1,loadMatrix[j][i]);
             r.push_back(d);
         }
         fields.push_back(r);
