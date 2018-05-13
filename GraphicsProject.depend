@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1526159066 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
+1526206630 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"graphics.hpp"
 	"GUI.hpp"
 	"Widget.hpp"
@@ -10,14 +10,15 @@
 1526058152 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\include\graphics.hpp
 	<string>
 
-1526065978 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.hpp
+1526206603 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.hpp
 	"graphics.hpp"
 	"Widget.hpp"
 	<vector>
 
-1526059926 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
+1526208872 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
 	"graphics.hpp"
 	"library/GUI.hpp"
+	"library/SudokuController.hpp"
 
 1526054949 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\global.cpp
 	"global.hpp"
@@ -63,7 +64,7 @@
 	"graphics.hpp"
 	"Widget.hpp"
 
-1526082090 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.cpp
+1526209400 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\digitbox.cpp
 	"DigitBox.hpp"
 
 1526074466 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokuboard.hpp
@@ -79,15 +80,44 @@
 	<vector>
 	<functional>
 
-1526159089 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526210652 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"DigitBox.hpp"
 	<vector>
+	<functional>
 
-1526160989 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
+1526214239 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
 	"SudokuBox.hpp"
 	<vector>
 	<fstream>
 	<string>
 	<sstream>
 	<iostream>
+
+1526208443 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.cpp
+	"WidgetGroup.hpp"
+	<vector>
+
+1526208242 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.hpp
+	"graphics.hpp"
+	"Widget.hpp"
+	"GUI.hpp"
+	<vector>
+
+1526214114 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.hpp
+	"WidgetGroup.hpp"
+	"GUI.hpp"
+	"Label.hpp"
+	"SudokuBox.hpp"
+
+1526214329 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.cpp
+	"SudokuController.hpp"
+	"SudokuBox.hpp"
+	"GUI.hpp"
+	"Label.hpp"
+
+1526214396 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\label.hpp
+	"Widget.hpp"
+
+1526214623 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\label.cpp
+	"Label.hpp"
 

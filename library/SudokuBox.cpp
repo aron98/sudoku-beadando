@@ -9,7 +9,7 @@
 using namespace genv;
 using namespace std;
 
-SudokuBox::SudokuBox(GUI* parent, Coord coords, string filename, int _width, int _height) : Widget(parent,coords,_width,_height){
+SudokuBox::SudokuBox(GUI* parent, Coord coords, string filename,std::function<void()> _action, int _width, int _height) : Widget(parent,coords,_width,_height),action(_action){
     loadMap(filename);
 }
 
@@ -50,7 +50,7 @@ void SudokuBox::draw(canvas& out){
     }
 }
 
-bool SudokuBox::validate(){
+void SudokuBox::validate(){
     for(int i=0; i<fields.size(); ++i)
     {
         for(int j=0; j<fields[i].size(); ++j)
@@ -126,7 +126,9 @@ bool SudokuBox::validate(){
             if(!fields[i][j]->valid || fields[i][j]->getValue()==0) valid=false;
         }
     }
-    return valid;
+    if(valid){
+        action();
+    }
 }
 
 SudokuBox::~SudokuBox(){

@@ -20,6 +20,7 @@ public:
     void eventLoop();
     genv::color getBackgroundColor();
     genv::color getBorderColor();
+    void addWidget(Widget* w);
     ~GUI();
 };
 

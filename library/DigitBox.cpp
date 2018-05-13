@@ -33,7 +33,7 @@ void DigitBox::eventHandler(const event& ev){
 void DigitBox::draw(canvas& out){
     out << move_to(position.x, position.y);
     if(focus) out << selectedColor;
-    else if(!focusable && !valid) out << color(255,backgroundColor.green,backgroundColor.blue);
+    //else if(!focusable && !valid) out << color(255,borderColor.green,borderColor.blue);
     else if(mouseOver) out << color(selectedColor.red+30,selectedColor.green+30, selectedColor.blue);
     else out << borderColor;
     out << box(width, height);
@@ -44,7 +44,10 @@ void DigitBox::draw(canvas& out){
         if(valid)out << backgroundColor;
         else out << color(255,backgroundColor.green,backgroundColor.blue);
     }
-    else out << color(backgroundColor.red-20,backgroundColor.green-20,backgroundColor.blue-20);
+    else{
+        if(valid)out << color(backgroundColor.red-20,backgroundColor.green-20,backgroundColor.blue-20);
+        else out << color(backgroundColor.red,backgroundColor.green-20,backgroundColor.blue-20);
+    }
     out << box(width-2, height-2);
 
     if(digit!=0)
