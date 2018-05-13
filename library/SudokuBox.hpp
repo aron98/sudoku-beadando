@@ -11,13 +11,12 @@
 #include <functional>
 
 class SudokuBox : public Widget{
-   std::vector<std::vector<DigitBox*>> fields;
    std::function<void()> action;
 public:
+    std::vector<std::vector<DigitBox*>> fields;
     SudokuBox(GUI* parent, Coord coords, std::function<void()> _action, int _width=0, int _height=0);
     void eventHandler(const genv::event& ev);
     void draw(genv::canvas& out);
-    void validate();
     bool loadMap(std::string filename);
     void generator(int k);
     ~SudokuBox();

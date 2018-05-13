@@ -18,6 +18,7 @@ class SudokuController : public WidgetGroup{
     void win();
     void generateBoard();
     void loadBoard();
+    void validate();
 public:
     SudokuController(GUI* parent);
 };
