@@ -3,9 +3,7 @@
 using namespace genv;
 using namespace std;
 
-SudokuBox::SudokuBox(GUI* parent, Coord coords, string filename,std::function<void()> _action, int _width, int _height) : Widget(parent,coords,_width,_height),action(_action){
-    loadMap(filename);
-}
+SudokuBox::SudokuBox(GUI* parent, Coord coords, std::function<void()> _action, int _width, int _height) : Widget(parent,coords,_width,_height),action(_action){}
 
 bool SudokuBox::loadMap(string filename){
     int h = gout.cascent() + gout.cdescent() + 7;
@@ -21,9 +19,14 @@ bool SudokuBox::loadMap(string filename){
         for(int j = 0; j < 9; j++){
             int temp;
             ss>>temp;
+            if(temp <0 || temp >9) temp=0;
             r.push_back(temp);
         }
         loadMatrix.push_back(r);
+    }
+    if(loadMatrix.size()!=9) return false;
+    for(int i=0; i <9; i++){
+        if(loadMatrix[i].size()!=9) return false;
     }
     fields.clear();
     for(int j = 0; j < 9; j++){

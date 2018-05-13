@@ -5,13 +5,14 @@ using namespace std;
 
 SudokuController::SudokuController(GUI* parent):WidgetGroup(parent){
     int h = gout.cascent() + gout.cdescent() + 7;
-    status = new Label(gui,Coord(10+3+9*h+9/3*2+5,10),200,40,"Solve the puzzle!");
+    status = new Label(gui,Coord(10+3+9*h+9/3*2+5,10),250,40,"Solve the puzzle!");
     widgets.push_back(status);
-    sudoku = new SudokuBox(gui, Coord(10,10), "levels/level.sudoku",[this](){win();},3+9*h+9/3*2,3+9*h+9/3*2);
+    sudoku = new SudokuBox(gui, Coord(10,10),[this](){win();},3+9*h+9/3*2,3+9*h+9/3*2);
+    sudoku->generator(30);
 
-    textBox = new InputField(gui,Coord(10+3+9*h+9/3*2+5,10+40+20),125,40,"level.sudoku");
+    textBox = new InputField(gui,Coord(10+3+9*h+9/3*2+5,10+40+20),165,40,"example.sudoku");
     widgets.push_back(textBox);
-    loader = new Button(gui,Coord(10+3+9*h+9/3*2+5+135,10+40+20),65,40,[this](){loadBoard();},"Load!",true);
+    loader = new Button(gui,Coord(10+3+9*h+9/3*2+5+175,10+40+20),75,40,[this](){loadBoard();},"Load!",true);
     widgets.push_back(loader);
 
     widgets.push_back(sudoku);
@@ -19,9 +20,9 @@ SudokuController::SudokuController(GUI* parent):WidgetGroup(parent){
     items.push_back("Easy");
     items.push_back("Medium");
     items.push_back("Hard");
-    menu = new MenuSelect(gui,Coord(10+3+9*h+9/3*2+5,10+40+20+40+20),95,40,items,3);
+    menu = new MenuSelect(gui,Coord(10+3+9*h+9/3*2+5,10+40+20+40+20),120,40,items,3);
     widgets.push_back(menu);
-    generator = new Button(gui,Coord(10+3+9*h+9/3*2+5+105,10+40+20+40+20),95,40,[this](){generateBoard();},"Generate!",true);
+    generator = new Button(gui,Coord(10+3+9*h+9/3*2+5+130,10+40+20+40+20),120,40,[this](){generateBoard();},"Generate!",true);
     widgets.push_back(generator);
 }
 
@@ -37,6 +38,6 @@ void SudokuController::generateBoard(){
 }
 
 void SudokuController::loadBoard(){
-    if(!sudoku->loadMap("levels/"+textBox->getValue())) status->changeVal("File not found!");
+    if(!sudoku->loadMap("levels/"+textBox->getValue())) status->changeVal("File not found, or bad format!");
     else status->changeVal("Solve the puzzle!");
 }

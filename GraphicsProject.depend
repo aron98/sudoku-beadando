@@ -10,7 +10,7 @@
 	"Widget.hpp"
 	<vector>
 
-1526246506 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
+1526247429 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
 	"graphics.hpp"
 	"library/GUI.hpp"
 	"library/SudokuController.hpp"
@@ -75,7 +75,7 @@
 	<vector>
 	<functional>
 
-1526246710 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526247860 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"Widget.hpp"
 	"DigitBox.hpp"
 	"SudokuGenerator.hpp"
@@ -84,7 +84,7 @@
 	<sstream>
 	<functional>
 
-1526246669 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
+1526247352 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
 	"SudokuBox.hpp"
 
 1526223927 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.cpp
@@ -137,9 +137,6 @@
 	"Widget.hpp"
 	<string>
 
-1526246392 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\inputfield.cpp
-	"graphics.hpp"
-	"Widget.hpp"
+1526246986 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\inputfield.cpp
 	"InputField.hpp"
-	<string>
 
