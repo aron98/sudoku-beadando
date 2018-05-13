@@ -10,6 +10,7 @@ DigitBox::DigitBox(GUI* parent, Coord coords, int _width, int _height, int _digi
 }
 
 void DigitBox::eventHandler(const event& ev){
+    Widget::eventHandler(ev);
     if(!focusable) return;
 
     if(ev.type == ev_key)
@@ -17,8 +18,6 @@ void DigitBox::eventHandler(const event& ev){
         if('0' <= ev.keycode && ev.keycode <= '9' && focus) digit = ev.keycode - '0';
     }
     if(ev.type==ev_mouse){
-        if(isOver(ev.pos_x,ev.pos_y))mouseOver=true;
-        else mouseOver=false;
         if(ev.button == btn_left){
             if(isOver(ev.pos_x, ev.pos_y))focus=true;
             else focus=false;

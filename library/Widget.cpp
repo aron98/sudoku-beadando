@@ -20,6 +20,13 @@ bool Widget::isOver(int posx, int posy){
     return false;
 }
 
+void Widget::eventHandler(const event& ev){
+    if(ev.type==ev_mouse){
+        if(isOver(ev.pos_x,ev.pos_y))mouseOver=true;
+        else mouseOver=false;
+    }
+}
+
 bool Widget::isFocusable(){
     return focusable;
 }

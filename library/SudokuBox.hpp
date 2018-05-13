@@ -1,7 +1,7 @@
 #ifndef SUDOKUBOX_H_INCLUDED
 #define SUDOKUBOX_H_INCLUDED
 
-//#include "Widget.hpp"
+#include "Widget.hpp"
 #include "DigitBox.hpp"
 
 #include <vector>
@@ -16,6 +16,7 @@ public:
     void draw(genv::canvas& out);
     void validate();
     void loadMap(std::string filename);
+    void generator(int k);
     ~SudokuBox();
 };
 

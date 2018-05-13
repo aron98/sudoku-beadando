@@ -1,7 +1,5 @@
 #include "WidgetGroup.hpp"
 
-#include <vector>
-
 using namespace genv;
 using namespace std;
 

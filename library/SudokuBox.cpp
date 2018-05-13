@@ -1,4 +1,5 @@
 #include "SudokuBox.hpp"
+#include "SudokuGenerator.hpp"
 
 #include <vector>
 #include <fstream>
@@ -39,6 +40,11 @@ void SudokuBox::loadMap(string filename){
         }
         fields.push_back(r);
     }
+}
+
+void SudokuBox::generator(int k){
+    SudokuGenerator sudoku(k);
+    loadMap("levels/generator.sudoku");
 }
 
 void SudokuBox::eventHandler(const event& ev){

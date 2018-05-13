@@ -4,8 +4,6 @@
 #include "DigitBox.hpp"
 #include "SudokuBox.hpp"
 
-#include <vector>
-
 using namespace genv;
 using namespace std;
 
