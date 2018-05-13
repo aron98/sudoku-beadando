@@ -1,10 +1,6 @@
 # depslib dependency file v1.0
-1526225038 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
-	"graphics.hpp"
+1526246586 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\gui.cpp
 	"GUI.hpp"
-	"Widget.hpp"
-	"DigitBox.hpp"
-	"SudokuBox.hpp"
 
 1526058152 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\include\graphics.hpp
 	<string>
@@ -14,7 +10,7 @@
 	"Widget.hpp"
 	<vector>
 
-1526242054 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
+1526246506 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\main.cpp
 	"graphics.hpp"
 	"library/GUI.hpp"
 	"library/SudokuController.hpp"
@@ -31,10 +27,8 @@
 	"global.hpp"
 	"GUI.hpp"
 
-1526225239 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
-	"graphics.hpp"
+1526246898 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widget.cpp
 	"Widget.hpp"
-	"GUI.hpp"
 
 1526064294 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudoku\sudoku.cpp
 	"../Widget.hpp"
@@ -81,43 +75,34 @@
 	<vector>
 	<functional>
 
-1526241811 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526246710 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"Widget.hpp"
 	"DigitBox.hpp"
-	<vector>
-	<functional>
-
-1526243439 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
-	"SudokuBox.hpp"
 	"SudokuGenerator.hpp"
-	<vector>
 	<fstream>
 	<string>
 	<sstream>
-	<iostream>
+	<functional>
+
+1526246669 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
+	"SudokuBox.hpp"
 
 1526223927 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.cpp
 	"WidgetGroup.hpp"
 
-1526225259 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.hpp
-	"graphics.hpp"
+1526246781 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.hpp
 	"Widget.hpp"
-	"GUI.hpp"
-	<vector>
 
-1526239305 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.hpp
-	"GUI.hpp"
+1526246876 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.hpp
 	"WidgetGroup.hpp"
 	"Label.hpp"
 	"SudokuBox.hpp"
 	"MenuSelect.hpp"
 	"Button.hpp"
+	"InputField.hpp"
 
-1526242042 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.cpp
+1526246846 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.cpp
 	"SudokuController.hpp"
-	"SudokuBox.hpp"
-	"GUI.hpp"
-	"Label.hpp"
 
 1526214396 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\label.hpp
 	"Widget.hpp"
@@ -147,4 +132,14 @@
 	<vector>
 	<fstream>
 	<iostream>
+
+1526246949 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\inputfield.hpp
+	"Widget.hpp"
+	<string>
+
+1526246392 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\inputfield.cpp
+	"graphics.hpp"
+	"Widget.hpp"
+	"InputField.hpp"
+	<string>
 

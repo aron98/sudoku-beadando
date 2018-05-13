@@ -1,11 +1,4 @@
 #include "SudokuBox.hpp"
-#include "SudokuGenerator.hpp"
-
-#include <vector>
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <iostream>
 
 using namespace genv;
 using namespace std;
@@ -14,9 +7,10 @@ SudokuBox::SudokuBox(GUI* parent, Coord coords, string filename,std::function<vo
     loadMap(filename);
 }
 
-void SudokuBox::loadMap(string filename){
+bool SudokuBox::loadMap(string filename){
     int h = gout.cascent() + gout.cdescent() + 7;
     ifstream input(filename.c_str());
+    if(!input.good()) return false;
     vector<vector<int>> loadMatrix;
     for(int i = 0; i < 9; i++){
         stringstream ss;
@@ -40,6 +34,7 @@ void SudokuBox::loadMap(string filename){
         }
         fields.push_back(r);
     }
+    return true;
 }
 
 void SudokuBox::generator(int k){

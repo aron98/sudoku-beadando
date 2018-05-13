@@ -1,8 +1,4 @@
-#include "graphics.hpp"
 #include "GUI.hpp"
-#include "Widget.hpp"
-#include "DigitBox.hpp"
-#include "SudokuBox.hpp"
 
 using namespace genv;
 using namespace std;

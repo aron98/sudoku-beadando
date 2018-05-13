@@ -1,6 +1,4 @@
-#include "graphics.hpp"
 #include "Widget.hpp"
-#include "GUI.hpp"
 
 using namespace genv;
 using namespace std;

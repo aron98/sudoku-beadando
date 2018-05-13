@@ -1,11 +1,7 @@
 #ifndef WIDGETGROUP_HPP_INCLUDED
 #define WIDGETGROUP_HPP_INCLUDED
 
-#include "graphics.hpp"
 #include "Widget.hpp"
-#include "GUI.hpp"
-
-#include <vector>
 
 class WidgetGroup : public Widget{
 protected:

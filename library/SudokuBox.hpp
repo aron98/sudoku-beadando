@@ -3,8 +3,11 @@
 
 #include "Widget.hpp"
 #include "DigitBox.hpp"
+#include "SudokuGenerator.hpp"
 
-#include <vector>
+#include <fstream>
+#include <string>
+#include <sstream>
 #include <functional>
 
 class SudokuBox : public Widget{
@@ -15,7 +18,7 @@ public:
     void eventHandler(const genv::event& ev);
     void draw(genv::canvas& out);
     void validate();
-    void loadMap(std::string filename);
+    bool loadMap(std::string filename);
     void generator(int k);
     ~SudokuBox();
 };

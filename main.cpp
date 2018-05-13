@@ -10,7 +10,7 @@ using namespace genv;
 int main()
 {
     srand(time(NULL));
-    GUI * g = new GUI(450,400);
+    GUI * g = new GUI(450,300);
     SudokuController* sudoku = new SudokuController(g);
     g->addWidget(sudoku);
     g->eventLoop();
