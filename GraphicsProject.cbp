@@ -41,16 +41,29 @@
 			<Add library="lib/libSDLmain.a" />
 			<Add directory="lib" />
 		</Linker>
+		<Unit filename="library/Button.cpp" />
+		<Unit filename="library/Button.hpp" />
 		<Unit filename="library/DigitBox.cpp" />
 		<Unit filename="library/DigitBox.hpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="library/GUI.cpp" />
 		<Unit filename="library/GUI.hpp" />
+		<Unit filename="library/InputField.cpp" />
+		<Unit filename="library/InputField.hpp" />
+		<Unit filename="library/Label.cpp" />
+		<Unit filename="library/Label.hpp" />
+		<Unit filename="library/MenuSelect.cpp" />
+		<Unit filename="library/MenuSelect.hpp" />
 		<Unit filename="library/SudokuBox.cpp" />
 		<Unit filename="library/SudokuBox.hpp" />
+		<Unit filename="library/SudokuController.cpp" />
+		<Unit filename="library/SudokuController.hpp" />
+		<Unit filename="library/SudokuGenerator.hpp" />
 		<Unit filename="library/Widget.cpp" />
 		<Unit filename="library/Widget.hpp" />
+		<Unit filename="library/WidgetGroup.cpp" />
+		<Unit filename="library/WidgetGroup.hpp" />
 		<Unit filename="library/global.cpp" />
 		<Unit filename="library/global.hpp" />
 		<Unit filename="main.cpp" />
