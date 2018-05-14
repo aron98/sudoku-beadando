@@ -21,6 +21,7 @@ class SudokuController : public WidgetGroup{
     void validate();
 public:
     SudokuController(GUI* parent);
+    //Nem kell destruktor, mert a parent destruktora automatikusan deletel minden pointert.
 };
 
 #endif // SUDOKUCONTROLLER_HPP_INCLUDED

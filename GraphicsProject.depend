@@ -75,7 +75,7 @@
 	<vector>
 	<functional>
 
-1526247860 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
+1526248767 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.hpp
 	"Widget.hpp"
 	"DigitBox.hpp"
 	"SudokuGenerator.hpp"
@@ -84,7 +84,7 @@
 	<sstream>
 	<functional>
 
-1526247352 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
+1526248765 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokubox.cpp
 	"SudokuBox.hpp"
 
 1526223927 source:c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.cpp
@@ -93,7 +93,7 @@
 1526246781 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\widgetgroup.hpp
 	"Widget.hpp"
 
-1526246876 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.hpp
+1526248781 c:\users\aron\desktop\beadandók\beadandó3\bevprog2\library\sudokucontroller.hpp
 	"WidgetGroup.hpp"
 	"Label.hpp"
 	"SudokuBox.hpp"
